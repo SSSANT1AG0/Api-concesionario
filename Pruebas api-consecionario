@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "343e39c7-3d0e-470f-be07-7bdc8c1383cc",
+		"name": "Pruebas api-consecionario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44802337",
+		"_collection_link": "https://santiago-6283632.postman.co/workspace/Santiago-'s-Workspace~9db2a938-3336-4f46-8b3d-f3c6c7bae173/collection/44802337-343e39c7-3d0e-470f-be07-7bdc8c1383cc?action=share&source=collection_link&creator=44802337"
+	},
+	"item": [
+		{
+			"name": "Prueba 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"marca\": \"Toyota\",\r\n    \"modelo\": \"Corolla\",\r\n    \"anio\": 2024,\r\n    \"precio\": 85000000\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"marca\": \"Chevrolet\",\r\n    \"modelo\": \"Onix\",\r\n    \"anio\": 2023,\r\n    \"precio\": 62000000\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Mazda\",\r\n  \"modelo\": \"3\",\r\n  \"anio\": 2025,\r\n  \"precio\": 95000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": \"Corolla XEI\",\r\n  \"anio\": 2025,\r\n  \"precio\": 90000000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehiculos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehiculos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehiculos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehiculos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 5",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"usuario\": \"asesor.ventas\",\r\n  \"contraseña\": \"Ventas2026\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 6",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"asesor.ventas\",\r\n  \"contraseña\": \"Ventas2026\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
